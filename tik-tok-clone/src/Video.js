@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import Footer from "./Footer";
+import SideBar from "./SideBar";
 import "./Video.css";
 
 function Video() {
@@ -16,7 +17,7 @@ function Video() {
   };
 
   return (
-    <div className="video">
+    <div className="video-player">
       <video
         ref={videoRef}
         loop
@@ -24,7 +25,12 @@ function Video() {
         onClick={onVideoPress}
         src="https://player.vimeo.com/external/451803780.sd.mp4?s=ae91ee61aad2c1e6bff2ee0124d89ee72e327bbb&profile_id=165&oauth2_token_id=57447761"
       ></video>
-      <Footer />
+      <Footer
+        channel="motormuscle69"
+        description="Belzebuth's asking for a hitch-hike"
+        song="Hell Bells - AC/DC"
+      />
+      <SideBar />
     </div>
   );
 }

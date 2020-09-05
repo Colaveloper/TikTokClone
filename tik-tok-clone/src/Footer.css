@@ -1,7 +1,9 @@
 .footer-div {
-  color: grey;
-  bottom: 30px;
-  z-index: 2;
+  color: white;
+  bottom: 105px;
+  padding: 0 1em;
+  display: flex;
+  position: relative;
 }
 
 @keyframes Spin360 {
@@ -15,8 +17,19 @@
 .record {
   animation: Spin360 infinite 5s linear;
   filter: invert(1);
+  height: 50px;
+  margin-top: 35px;
+  margin-left: 10px;
 }
 
 .footer-text {
   flex: 1;
+}
+
+.note {
+  position: absolute;
+}
+
+.ticker {
+  margin-left: 25px;
 }
