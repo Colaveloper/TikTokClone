@@ -1,5 +1,10 @@
 .sidebar {
   position: absolute;
-  right: 20px;
-  top: 50%;
+  right: 5px;
+  top: 45%;
+}
+
+.side-button {
+  padding: 20px;
+  text-align: center;
 }

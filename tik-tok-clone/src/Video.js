@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import SideBar from "./SideBar";
 import "./Video.css";
 
-function Video() {
+function Video({ url, channel, description, song, likes, messages, shares }) {
   const videoRef = useRef(null); // hook to reference to an html object down there
   const [playing, setPlaying] = useState(false);
   const onVideoPress = () => {
@@ -23,14 +23,11 @@ function Video() {
         loop
         autoPlay
         onClick={onVideoPress}
-        src="https://player.vimeo.com/external/451803780.sd.mp4?s=ae91ee61aad2c1e6bff2ee0124d89ee72e327bbb&profile_id=165&oauth2_token_id=57447761"
+        src={url}
+        // "https://player.vimeo.com/external/451803780.sd.mp4?s=ae91ee61aad2c1e6bff2ee0124d89ee72e327bbb&profile_id=165&oauth2_token_id=57447761"
       ></video>
-      <Footer
-        channel="motormuscle69"
-        description="Belzebuth's asking for a hitch-hike"
-        song="Hell Bells - AC/DC"
-      />
-      <SideBar />
+      <Footer channel={channel} description={description} song={song} />
+      <SideBar likes={likes} messages={messages} shares={shares} />
     </div>
   );
 }
