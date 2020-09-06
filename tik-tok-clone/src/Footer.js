@@ -15,11 +15,7 @@ function Footer({ channel, description, song }) {
         </p>
         <MusicNoteIcon className="note" />
         <Ticker mode="smooth">
-          {({ index }) => (
-            <>
-              <p style={{ fontSize: 13, lineHeight: 2 }}>{song}</p>
-            </>
-          )}
+          {({ index }) => <p style={{ fontSize: 13, lineHeight: 2 }}>{song}</p>}
         </Ticker>
       </div>
       <img

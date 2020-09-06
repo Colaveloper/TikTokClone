@@ -1,3 +1,5 @@
+import firebase from "firebase";
+
 const firebaseConfig = {
   apiKey: "AIzaSyCGUZ-Wy9c9YpGsdGQwEQj1BTzst49t13o",
   authDomain: "tiktokclone-17d1a.firebaseapp.com",
